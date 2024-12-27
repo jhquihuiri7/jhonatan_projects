@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from breast_cancer.views import render_project
+from darwin_finches.views import render_project_darwin_finches
 from google_financials_dashboard.views import render_google_project
 from google_financials_dashboard.dash_apps import dash_app
 
@@ -24,6 +25,7 @@ from google_financials_dashboard.dash_apps import dash_app
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('breast_cancer_project/', render_project),
+    path('darwin_finches_project/', render_project_darwin_finches),
     path('django_plotly_dash/', include('django_plotly_dash.urls')),
     path('google_financials_dashboard_project/', render_google_project),
 ]

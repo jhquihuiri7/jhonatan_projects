@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_plotly_dash',
     'breast_cancer',
+    'darwin_finches',
     'google_financials_dashboard',
 
 ]
